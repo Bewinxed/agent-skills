@@ -1,0 +1,11 @@
+{
+  "$schema": "../marketplace.schema.json#/$defs/skill",
+  "name": "snoonu",
+  "version": "1.0.0",
+  "description": "Add grocery items to cart via Snoonu delivery platform in Qatar. Use when user wants to order groceries from Monoprix, Lulu, or other Snoonu stores. Searches products, selects best matches, and adds to cart via browser automation.",
+  "path": ".",
+  "skillFile": "snoonu.skill",
+  "readme": "SKILL.md",
+  "allowedTools": ["Read", "Bash", "mcp__playwriter__execute", "mcp__playwriter__reset"],
+  "tags": ["automation", "browser", "shopping", "qatar"]
+}

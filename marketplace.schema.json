@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/Bewinxed/agent-skills/main/marketplace.schema.json",
+  "title": "Agent Skills Marketplace",
+  "description": "Schema for an agent skill marketplace catalog",
+  "type": "object",
+  "required": ["version", "name", "skills"],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "JSON Schema reference"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Semantic version of the marketplace catalog"
+    },
+    "name": {
+      "type": "string",
+      "description": "Display name of the marketplace"
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description of the marketplace"
+    },
+    "author": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "github": { "type": "string", "format": "uri" }
+      }
+    },
+    "repository": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL of the source repository"
+    },
+    "skills": {
+      "type": "array",
+      "description": "List of skills available in this marketplace",
+      "items": { "$ref": "#/$defs/skill" },
+      "minItems": 1
+    }
+  },
+  "$defs": {
+    "skill": {
+      "type": "object",
+      "required": ["name", "version", "description", "path", "skillFile", "readme"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Unique skill identifier (kebab-case)"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "description": "Semantic version of the skill"
+        },
+        "description": {
+          "type": "string",
+          "description": "Short description of what the skill does and when to invoke it"
+        },
+        "path": {
+          "type": "string",
+          "description": "Path to the skill directory. In marketplace.json use a repository-root-relative path (e.g. \"build-check\"). In an individual skill.json use \".\" since the file is already inside the skill directory."
+        },
+        "skillFile": {
+          "type": "string",
+          "description": "Path to the packaged .skill archive. In marketplace.json use a repository-root-relative path. In an individual skill.json use a path relative to the skill directory."
+        },
+        "readme": {
+          "type": "string",
+          "description": "Path to the skill's SKILL.md. In marketplace.json use a repository-root-relative path. In an individual skill.json use a path relative to the skill directory."
+        },
+        "allowedTools": {
+          "type": "array",
+          "description": "List of tools the skill is allowed to use",
+          "items": { "type": "string" }
+        },
+        "tags": {
+          "type": "array",
+          "description": "Optional categorization tags",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}
