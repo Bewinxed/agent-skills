@@ -1,0 +1,10 @@
+{
+  "$schema": "../marketplace.schema.json#/$defs/skill",
+  "name": "build-check",
+  "version": "1.0.0",
+  "description": "A cognitive circuit breaker for personal projects. Runs a structured \"build vs. buy vs. borrow\" analysis on a project idea or existing codebase to prevent unnecessary building, reduce tech debt, and surface modern alternatives. Use this skill whenever the user says things like \"I want to build...\", \"should I build this?\", \"review my project for tech debt\", \"is there something that already does this?\", \"audit my dependencies\", \"am I reinventing the wheel?\", \"build check\", \"build-check\", or any time the user is evaluating whether to start a new project, continue an existing one, or is looking for existing solutions.",
+  "path": ".",
+  "skillFile": "build-check.skill",
+  "readme": "SKILL.md",
+  "tags": ["analysis", "productivity", "tech-debt", "code-review"]
+}

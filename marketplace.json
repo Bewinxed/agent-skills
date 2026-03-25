@@ -1,0 +1,41 @@
+{
+  "$schema": "./marketplace.schema.json",
+  "version": "1.0.0",
+  "name": "Bewinxed's Agent Skills",
+  "description": "A collection of agent skills for AI assistants",
+  "author": {
+    "name": "Bewinxed",
+    "github": "https://github.com/Bewinxed"
+  },
+  "repository": "https://github.com/Bewinxed/agent-skills",
+  "skills": [
+    {
+      "name": "build-check",
+      "version": "1.0.0",
+      "description": "A cognitive circuit breaker for personal projects. Runs a structured \"build vs. buy vs. borrow\" analysis on a project idea or existing codebase to prevent unnecessary building, reduce tech debt, and surface modern alternatives. Use this skill whenever the user says things like \"I want to build...\", \"should I build this?\", \"review my project for tech debt\", \"is there something that already does this?\", \"audit my dependencies\", \"am I reinventing the wheel?\", \"build check\", \"build-check\", or any time the user is evaluating whether to start a new project, continue an existing one, or is looking for existing solutions.",
+      "path": "build-check",
+      "skillFile": "build-check/build-check.skill",
+      "readme": "build-check/SKILL.md",
+      "tags": ["analysis", "productivity", "tech-debt", "code-review"]
+    },
+    {
+      "name": "snoonu",
+      "version": "1.0.0",
+      "description": "Add grocery items to cart via Snoonu delivery platform in Qatar. Use when user wants to order groceries from Monoprix, Lulu, or other Snoonu stores. Searches products, selects best matches, and adds to cart via browser automation.",
+      "path": "snoonu.com",
+      "skillFile": "snoonu.com/snoonu.skill",
+      "readme": "snoonu.com/SKILL.md",
+      "allowedTools": ["Read", "Bash", "mcp__playwriter__execute", "mcp__playwriter__reset"],
+      "tags": ["automation", "browser", "shopping", "qatar"]
+    },
+    {
+      "name": "comfyui-workflow-research",
+      "version": "1.0.0",
+      "description": "Research ComfyUI workflows, LoRAs, custom nodes, and techniques from community sources. Use when building or optimizing ComfyUI workflows, finding LoRAs, researching custom nodes, or troubleshooting. Discovers node schemas from ComfyUI's API and manipulates workflows programmatically to avoid token waste.",
+      "path": "comfyui/comfyui-workflow-research",
+      "skillFile": "comfyui/comfyui-workflow-research/comfyui-workflow-research.skill",
+      "readme": "comfyui/comfyui-workflow-research/SKILL.md",
+      "tags": ["ai", "image-generation", "comfyui", "research"]
+    }
+  ]
+}

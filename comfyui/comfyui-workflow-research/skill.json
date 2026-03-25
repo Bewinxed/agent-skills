@@ -1,0 +1,10 @@
+{
+  "$schema": "../../marketplace.schema.json#/$defs/skill",
+  "name": "comfyui-workflow-research",
+  "version": "1.0.0",
+  "description": "Research ComfyUI workflows, LoRAs, custom nodes, and techniques from community sources. Use when building or optimizing ComfyUI workflows, finding LoRAs, researching custom nodes, or troubleshooting. Discovers node schemas from ComfyUI's API and manipulates workflows programmatically to avoid token waste.",
+  "path": ".",
+  "skillFile": "comfyui-workflow-research.skill",
+  "readme": "SKILL.md",
+  "tags": ["ai", "image-generation", "comfyui", "research"]
+}
