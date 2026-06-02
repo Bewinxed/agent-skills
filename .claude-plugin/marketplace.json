@@ -1,0 +1,20 @@
+{
+  "name": "bewinxed-agent-skills",
+  "owner": {
+    "name": "Bewinxed",
+    "email": "bewinxed@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "svelte-house-rules",
+      "source": "./svelte-house-rules",
+      "description": "Process discipline, library preferences, engineering taste, Tailwind v4 styling, animations that avoid layout overlap, iOS keyboard fixes, error handling, PostHog analytics, and swipe carousels for Svelte 5 / SvelteKit on Cloudflare Workers. Triggers when the project uses Svelte, SvelteKit, Drizzle, D1, Tailwind v4, vaul-svelte, bits-ui, runed, valibot, svelte-sonner, carta-md, date-fns-tz, mode-watcher, paraglide-js, or river.ts.",
+      "version": "1.0.0",
+      "displayName": "Svelte House Rules",
+      "author": {
+        "name": "Bewinxed"
+      },
+      "homepage": "https://github.com/Bewinxed/agent-skills/tree/main/svelte-house-rules"
+    }
+  ]
+}

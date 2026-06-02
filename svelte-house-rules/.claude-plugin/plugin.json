@@ -1,0 +1,11 @@
+{
+  "name": "svelte-house-rules",
+  "version": "1.0.0",
+  "description": "Process discipline, library preferences, engineering taste, styling tokens, animations, mobile fixes, error handling, PostHog analytics, and swipe carousels for Svelte 5 / SvelteKit on Cloudflare Workers.",
+  "author": {
+    "name": "Bewinxed",
+    "url": "https://github.com/Bewinxed"
+  },
+  "homepage": "https://github.com/Bewinxed/agent-skills/tree/main/svelte-house-rules",
+  "keywords": ["svelte", "sveltekit", "cloudflare-workers", "tailwind", "drizzle", "frontend"]
+}

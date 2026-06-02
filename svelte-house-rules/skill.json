@@ -5,6 +5,6 @@
   "description": "Apply when working on Svelte 5 / SvelteKit projects — planning, building UI, writing $app/server query/command remote functions, shaping Drizzle/D1 schemas, migrating data models, wiring navigation CTAs, handling timezones, gating routes, designing admin tools, integrating libraries, deploying to Cloudflare Workers, animating screen-to-screen transitions, building mobile or PWA surfaces, fixing iOS keyboard or safe-area issues, building vaul drawers with forms, or reviewing a diff. Triggers when the project uses Svelte, SvelteKit, Drizzle, D1, Tailwind v4, vaul-svelte, bits-ui, runed, valibot, svelte-sonner, carta-md, date-fns-tz, mode-watcher, paraglide-js, or river.ts. Covers process discipline, library choices, engineering taste (anchor over button-goto, discriminated unions, failfast at consumers), Tailwind v4 styling tokens with mode-watcher light/dark fork, Apple Liquid Glass recipe, animation patterns that avoid layout overlap, mobile keyboard fixes, error handling, PostHog analytics, and swipe carousels.",
   "path": ".",
   "skillFile": "svelte-house-rules.skill",
-  "readme": "SKILL.md",
+  "readme": "skills/svelte-house-rules/SKILL.md",
   "tags": ["svelte", "sveltekit", "cloudflare-workers", "tailwind", "drizzle", "frontend"]
 }

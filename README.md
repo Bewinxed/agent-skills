@@ -1,10 +1,19 @@
 # agent-skills
 
-A compliant skill marketplace containing reusable agent skills for AI assistants.
+A skill marketplace containing reusable agent skills for AI assistants.
 
-## Marketplace
+## Marketplaces
 
-The [`marketplace.json`](./marketplace.json) file is the root catalog for this marketplace. It lists all available skills with their metadata and follows the schema defined in [`marketplace.schema.json`](./marketplace.schema.json).
+This repo is published under **two** marketplace formats so it works with multiple consumers:
+
+- [`.claude-plugin/marketplace.json`](./.claude-plugin/marketplace.json) — Claude Code's native plugin marketplace format. Install with:
+  ```
+  /plugin marketplace add Bewinxed/agent-skills
+  /plugin install svelte-house-rules@bewinxed-agent-skills
+  ```
+- [`marketplace.json`](./marketplace.json) — custom catalog format following [`marketplace.schema.json`](./marketplace.schema.json), for other consumers that read this layout.
+
+Both point at the same plugin/skill directories.
 
 ## Skills
 
