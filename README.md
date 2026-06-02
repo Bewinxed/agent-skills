@@ -13,6 +13,7 @@ The [`marketplace.json`](./marketplace.json) file is the root catalog for this m
 | [build-check](./build-check/) | Runs a structured "build vs. buy vs. borrow" analysis to prevent unnecessary building and surface modern alternatives |
 | [snoonu](./snoonu.com/) | Adds grocery items to cart via the Snoonu delivery platform in Qatar using browser automation |
 | [comfyui-workflow-research](./comfyui/comfyui-workflow-research/) | Researches ComfyUI workflows, LoRAs, and custom nodes from community sources |
+| [svelte-house-rules](./svelte-house-rules/) | Process discipline, library preferences, engineering taste, styling tokens, animations, mobile fixes, error handling, PostHog analytics, and swipe carousels for Svelte 5 / SvelteKit on Cloudflare Workers |
 
 ## Structure
 
